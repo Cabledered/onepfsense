@@ -94,7 +94,22 @@ Required info for the deployment:
 - DOMAIN: `local.kz`
 - PASSWORD for user `admin`: `YourStrongPass`
 
-
-
 ![imagen](https://github.com/user-attachments/assets/7c543ed9-996a-4058-a30d-1c7cf527a297)
+
+Put the name of the VRouter:
+
+![imagen](https://github.com/user-attachments/assets/f6547174-c079-4da2-8438-ea1f0d965c98)
+
+Is not mandatory to force the IP, but it will be done in this example:
+
+![imagen](https://github.com/user-attachments/assets/7043cdbd-a2a1-436e-827e-dce630bfef2b)
+
+Add the LAN interface. It is adviseable t force the IP in this case, to make sure the pfSense LAN IP is the Gateway of the LAN Virtual Network:
+
+![imagen](https://github.com/user-attachments/assets/afef064b-840c-4e82-8b44-25f6763d85a0)
+
+Fill the remaining info for the instantiation of the VRouter:
+
+![imagen](https://github.com/user-attachments/assets/fd4d823b-6fac-448a-98bc-07a4a602dd07)
+
 
