@@ -112,4 +112,19 @@ Fill the remaining info for the instantiation of the VRouter:
 
 ![imagen](https://github.com/user-attachments/assets/fd4d823b-6fac-448a-98bc-07a4a602dd07)
 
+When you are done here, you are ready to complete the instantiation of the VRouter:
+
+![imagen](https://github.com/user-attachments/assets/6ce52358-7fdc-4267-8a3f-b53b9e5cf065)
+
+Check the created VRouter:
+
+![imagen](https://github.com/user-attachments/assets/863dd199-882c-477b-8965-9da87c14ec62)
+
+It would looks like follow:
+
+![imagen](https://github.com/user-attachments/assets/a857a7d2-bdd4-4edf-b42b-d0b3b4acf09d)
+
+And in the VMs tab, of the given VRouter, it will appear the associated VM for this standalone pfSense VRouter:
+
+![Uploading imagen.png…]()
 
