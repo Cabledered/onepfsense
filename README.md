@@ -1,6 +1,6 @@
 # PfSense app for OpenNebula
 
-This is a private appliance available only on private Marketplaces.
+This is a private appliance available only on SMartApps Private Marketplace.
 
 ## 1.1. Overview
 
