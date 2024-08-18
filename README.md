@@ -130,7 +130,7 @@ In the VMs tab, of the given VRouter, it will appear the associated VM for this 
 
 Wait from 2 to 4 minutes, and the appliance will be ready. It will reboot and after bootup again, the pfSense will be ready for use, already installed and running with the provided contextualization parameters:
 
-![imagen](https://github.com/user-attachments/assets/9a96fadb-27ff-4e59-923b-974b5ddf3471)
+![imagen](https://github.com/user-attachments/assets/ef00c444-3524-40d5-a2dc-16b9a163a786)
 
 Open your browser and access to the VRouter public IP:
 
