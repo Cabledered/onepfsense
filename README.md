@@ -134,7 +134,7 @@ Wait from 2 to 4 minutes, and the appliance will be ready. It will reboot and af
 
 Open your browser and access to the VRouter public IP:
 
-![imagen](https://github.com/user-attachments/assets/936652e9-774f-411e-a178-33c445907cdc)
+![imagen](https://github.com/user-attachments/assets/ca0f2e06-a4ec-467e-a3c5-cd20f728b745)
 
 The script is not perfect, so any incoherence with the contextualization, edit it manually from the pfSense WebGUI:
 
@@ -155,5 +155,34 @@ Required info for the deployment:
 - PASSWORD for user `admin`: `YourStrongPass`
 
 The proceedure is the same as the standalone deployment, except for the number of instances to be deployed and that in this case it is required to specify the VRouter Floating IP (the VIP).
+
+For public network:
+
+![imagen](https://github.com/user-attachments/assets/7708122c-85a5-41ae-9d70-72f3cd731fa3)
+
+For LAN private network:
+
+![imagen](https://github.com/user-attachments/assets/e6dc3772-1f58-45dc-82b3-fe412407bf50)
+
+Number of instances:
+
+![imagen](https://github.com/user-attachments/assets/845f032c-062d-4c5a-8f52-67477f6a6894)
+
+Primary pfSense instance of the VRouter:
+
+![WhatsApp Image 2024-08-17 at 4 46 38 PM](https://github.com/user-attachments/assets/8090d3f1-ce12-45d5-998b-fea0021c4e2d)
+
+Secondary pfSense instance of the VRouter:
+
+![WhatsApp Image 2024-08-17 at 4 47 00 PM](https://github.com/user-attachments/assets/b9d6d440-e5af-4a04-af27-974e0afb711e)
+
+Some notes on about this deployment:
+
+- The two instances of the VRouter will automatically be configured and it could take around `10min` to finish the auto-configuration.
+- In case the domain name be the same as the hostname, you can edit it from the contextualization variables of the VM (`SET_HOSTNAME`), same for the hostanme variable (`HOSTNAME`).
+- If the primary pfSense WebGUI is still not available from the public network, after `10min`. try reboot the VM instance.
+- Once you be able to access to each pfSense WebGUI. Update the WAN CARP IP and the LAN CARP IP, with the real values for WAN floating IP and LAN floating IP (contextualization script is not ready to configure this automatically).
+- The local network of the OpenVPN server might be updated manually from the pfSense WebGUI.
+- Find more information related with pfSense HA setup [here](https://docs.netgate.com/pfsense/en/latest/highavailability/index.html "High Availability").
 
 
