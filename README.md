@@ -4,11 +4,11 @@ This is a private appliance available only on SMartApps Private Marketplace.
 
 ## 1.1. Overview
 
-This repo explain how to use the unofficial and private OpenNebula appliance for [pfSense](https://www.pfsense.org "Go to pfSense homepage"), the most trusted open source Unified Threat Management (UTM) in the world. The appliance is inttended to be used for customers where their infrastructure are in the cloud. Beside of the FW security riles, the pfSense will have access to the public network and it will prepared with services for Load Balance and VPN access to the customer's cloud infrastructure, on the pfSense LAN network.
+This repo explain how to use the unofficial and private OpenNebula appliance for [pfSense](https://www.pfsense.org "Go to pfSense homepage"), the most trusted open source Unified Threat Management (UTM) in the world. The appliance is inttended to be used for customers where their infrastructure resides in the cloud. Beside of the FW security rules, the pfSense will have access to the public network and it will be prepared to host services for Load Balance and VPN access to the customer's cloud infrastructure.
 
 ## 1.2. Appliance customization keys
 
-The appliance allow the automated standalone and HA deployment for pfSense, as a VRouter in OpenNebula. Using our custome contextualization script in bash, there are some actions through the contextualization, that may help the user to modify the pfsense fom the OpenNebula Sunstone. These are the main features:
+The appliance allow the automated standalone and HA deployment for pfSense, as a VRouter in OpenNebula. Using our custome contextualization script in bash, it provides support to some actions through the contextualization, helping the customer to modify the pfsense fom the OpenNebula Sunstone. These are the main features:
 
 - Automated deployment of a pfSense 2.7.2 standalone VRouter.
 - Automated deployment of a pfSense 2.7.2 HA VRouter.
