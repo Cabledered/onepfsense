@@ -124,7 +124,36 @@ It would looks like follow:
 
 ![imagen](https://github.com/user-attachments/assets/a857a7d2-bdd4-4edf-b42b-d0b3b4acf09d)
 
-And in the VMs tab, of the given VRouter, it will appear the associated VM for this standalone pfSense VRouter:
+In the VMs tab, of the given VRouter, it will appear the associated VM for this standalone pfSense VRouter:
 
-![Uploading imagen.png…]()
+![imagen](https://github.com/user-attachments/assets/f10bc310-6e7a-4b0b-bd80-f52fdf98a043)
+
+Wait from 2 to 4 minutes, and the appliance will be ready. It will reboot and after bootup again, the pfSense will be ready for use, already installed and running with the provided contextualization parameters:
+
+![imagen](https://github.com/user-attachments/assets/9a96fadb-27ff-4e59-923b-974b5ddf3471)
+
+Open your browser and access to the VRouter public IP:
+
+![imagen](https://github.com/user-attachments/assets/936652e9-774f-411e-a178-33c445907cdc)
+
+The script is not perfect, so any incoherence with the contextualization, edit it manually from the pfSense WebGUI:
+
+![imagen](https://github.com/user-attachments/assets/321ba2c7-a1cc-4fdc-abde-1edc38334a65)
+
+# 5. Deploying an HA pfSense VRouter
+
+Required info for the deployment:
+
+- WAN VIP: `144.168.40.133`
+- Primary pfSense WAN IP: `144.168.40.131`
+- Secondary pfSense WAN IP: `144.168.40.132`
+- LAN VIP: `192.168.0.1`
+- Primary pfSense LAN IP: `192.168.0.2`
+- Secondary pfSense LAN IP: `192.168.0.3`
+- HOSTNAME: `pfsense`
+- DOMAIN: `local.kz`
+- PASSWORD for user `admin`: `YourStrongPass`
+
+The proceedure is the same as the standalone deployment, except for the number of instances to be deployed and that in this case it is required to specify the VRouter Floating IP (the VIP).
+
 
