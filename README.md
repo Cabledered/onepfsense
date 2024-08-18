@@ -122,7 +122,7 @@ Check the created VRouter:
 
 It would looks like follow:
 
-![imagen](https://github.com/user-attachments/assets/a857a7d2-bdd4-4edf-b42b-d0b3b4acf09d)
+![imagen](https://github.com/user-attachments/assets/4e16b70f-8ae3-4e2c-b7a0-4b09e3f2d1b8)
 
 In the VMs tab, of the given VRouter, it will appear the associated VM for this standalone pfSense VRouter:
 
