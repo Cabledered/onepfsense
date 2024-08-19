@@ -27,6 +27,9 @@ The appliance allow the automated standalone and HA deployment for pfSense, as a
 - Access to SSH through: `2222/tcp`.
 - Preconfigured set of rules for the firewall interfaces with NAT Outbound.
 - Contextualization script logs can by checked on: `/var/log/onecontext.log`.
+- Editable variables from the custom context vars (the rest are not recommended to be edited):
+  - Hostname: `SET_HOSTNAME`.
+  - Domain name: `SET_DOMAIN`.
 
 # 2. Downloading the appliance from the Marketplace
 
@@ -179,9 +182,9 @@ Secondary pfSense instance of the VRouter:
 Some notes on about this deployment:
 
 - The two instances of the VRouter will automatically be configured and it could take around 10 minutes to finish the auto-configuration.
-- In case the domain name be the same as the hostname, you can edit it from the contextualization variables of the VM (`SET_HOSTNAME`), same for the hostanme variable (`HOSTNAME`).
-- If the primary pfSense WebGUI is still not available from the public network, after `10min`. try reboot the VM instance.
-- Once you be able to access to each pfSense WebGUI. Update the WAN CARP IP and the LAN CARP IP, with the real values for WAN floating IP and LAN floating IP (contextualization script is not ready to configure this automatically).
+- If the primary pfSense WebGUI is still not available from the public network, after 10 minutes, try to reboot the VM instance.
+- In case of the domain name be the same as the hostname, you can edit it from the contextualization variables of the VM (`SET_DOMAIN`), same for the hostname variable (`SET_HOSTNAME`).
+- Once you be able to access to each pfSense WebGUI, update the **WAN CARP IP** and the **LAN CARP IP**, with the real values for **WAN floating IP** and **LAN floating IP** *(contextualization script is not ready to configure this automatically)*.
 - The local network of the OpenVPN server might be updated manually from the pfSense WebGUI.
 - Find more information related with pfSense HA setup [here](https://docs.netgate.com/pfsense/en/latest/highavailability/index.html "High Availability").
 
