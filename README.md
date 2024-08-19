@@ -1,6 +1,6 @@
 # PfSense app for OpenNebula
 
-This is a private appliance available only on SMartApps Private Marketplace.
+This is a private appliance available only on SmartApps Private Marketplace, but you can take the config.xml and the script and create your own appliance based on these files (it will require to build from, scratch the pfSense).
 
 ## 1.1. Overview
 
