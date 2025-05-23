@@ -827,7 +827,7 @@
                         <month>*</month>
                         <wday>*</wday>
                         <who>root</who>
-                        <command>/root/onecontext/./one-context.sh</command>
+                        <command>/usr/local/bin/bash /root/onecontext/./one-context.sh</command>
                 </item>
                 <item>
                         <minute>@reboot</minute>
